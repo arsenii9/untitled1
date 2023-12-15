@@ -27,6 +27,20 @@ public class HWfromVideo {
         Thread.sleep(3000);
         driver.findElement(By.xpath("//a[@title = 'Women']")).click();
         Thread.sleep(5000);
+        driver.findElement(By.id("search_query_top")).sendKeys("faded short");
+        driver.findElement(By.name("submit_search")).click();
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("//a[text() = 'Faded Short Sleeve T-shirts']")).click();
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("//a[@span = 'Add to cart']")).click();
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("//@span[text() = 'Continue shopping']")).click();
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("//b[text() = 'Cart']")).click();
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("//@span[text() = 'Check out']")).click();
+        Thread.sleep(3000);
+
         driver.quit();
 
     }
