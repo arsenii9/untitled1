@@ -1,4 +1,4 @@
-package lesson7;
+/*package lesson7;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -125,4 +125,4 @@ public class HW1 {
         WebElement outputElement = driver.findElement(By.id("popupboxoutput"));
         System.out.println(outputElement.getText());
     }
-}
+}*/
